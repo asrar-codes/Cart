@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #122;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  width: 25%;
+  font-size: 2.8rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#bag {
+  width: 100%;
+  font-size: 2.5rem;
+  color: rgb(93, 106, 224);
+}
+.bag {
+  position: relative;
+  top: 0;
+  cursor: pointer;
+}
+.bag span {
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: -25%;
+  right: -20%;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
+.root {
+  width: 50vw;
+  margin: 2rem auto;
+}
+.loading {
+  height: 50vh;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.container {
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  /* column-gap: 1rem; */
+}
+
+.img-container {
+  height: 150px;
+  width: 150px;
+}
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.right div {
+  font-size: 1.4rem;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0;
+  text-align: left;
+  color: brown;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.increase-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.decrease-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.footer {
+  width: 50vw;
+  padding: 3rem;
+  margin: auto;
+  display: h;
+}
+.underline {
+  width: 110%;
+  height: 0.1rem;
+  background-color: black;
+  margin: auto;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.total p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.clear-cart {
+  width: 30%;
+  margin: auto;
+}
+.clear-cart-btn {
+  background: none;
+  border: 2px solid brown;
+  font-size: 1.3rem;
+  padding: 0.3rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.clear-cart-btn:hover {
+  background-color: brown;
+  border: 2px solid black;
+}
