@@ -144,3 +144,25 @@
   background-color: brown;
   border: 2px solid black;
 }
+@media (max-width: 1065px) {
+  .clear-cart-btn {
+    width: max-content;
+  }
+}
+@media (max-width: 768px) {
+  .root {
+    width: 90%;
+  }
+  .container {
+    width: 100%;
+    /* border: 2px solid slateblue; */
+  }
+  .footer {
+    width: 90%;
+  }
+  .clear-cart-btn {
+    margin-top: 1rem;
+    padding: 0.3rem;
+    width: max-content;
+  }
+}
