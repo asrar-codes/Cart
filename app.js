@@ -3,6 +3,7 @@ const clearCartBtn = document.querySelector(".clear-cart-btn");
 const footer = document.querySelector(".footer");
 const totalItemsDOM = document.querySelector("#totalItems");
 const totalCartPriceDOM = document.querySelector("#totalCart");
+const loader = document.querySelector(".loader");
 let amountDOM;
 
 clearCartBtn.addEventListener("click", clearCart);
@@ -16,6 +17,8 @@ fetchData();
 async function fetchData() {
   root.classList.add("loading");
   root.innerHTML = `<h1>Loading...</h1>`;
+  // loader.style.visibility = "visible";
+
   footer.style.visibility = "hidden";
   const response = await fetch(url);
   cart = await response.json();
